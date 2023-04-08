@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+    <h3>¿Alcohol o gasolina?</h3>
+<script>
+    /* MI SOLUCION */
+    var litrosTanque = 40;
+    var distanciaRecorrida = 480;
+    /* La siguiente variable define la cantidad de km recorridos por cada litro de gasolina*/
+    var eficienciaDelCarro = distanciaRecorrida/litrosTanque;
+    
+    /*Con gasolina*/
+    document.write("La eficiencia del carro con "+litrosTanque+" litros de gasolina al recorrer "+distanciaRecorrida+" kilometros, es: "+ eficienciaDelCarro);
+    document.write("<br>");
+    document.write("<br>");
+    
+    /*Con alcohol*/
+    distanciaRecorrida = 300;
+    /* La siguiente variable define la cantidad de km recorridos por cada litro de alcohol*/
+    eficienciaDelCarro = distanciaRecorrida/litrosTanque;
+    document.write("La eficiencia del carro con "+litrosTanque+" litros de alcohol al recorrer "+distanciaRecorrida+" kilometros, es: "+ eficienciaDelCarro);
+    
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    /* SOLUCION DE CHRISTIAN */
+    var tanque = 40;
+    var caminoConGasolina = 480; 
+    var consumoDeGasolina = caminoConGasolina/tanque;
+    document.write("La eficiencia del carro usando gasolina es " + consumoDeGasolina+" km/L");
+
+    var caminoConAlcohol = 300;
+    var consumoDeAlcohol = caminoConAlcohol/tanque;
+
+    document.write("<br>");
+    document.write("La eficiencia del carro usando alcohol es " + consumoDeAlcohol+" km/L");
+
+    document.write("<br>");
+    document.write("<br>");
+    /* Creditos: Carlos Andrés Mendoza Gómez */
+    var combustible1 = "Gasolina"
+    var combustible2 = "Alcohol"
+    var recorrido1 = 480
+    var recorrido2 = 300
+    /* Tambien podemos usar una tabla de la siguiente manera: */
+    document.write("<table>");
+    document.write("<thead>");
+        document.write("<tr>");
+            document.write("<th>Combustible</th>");
+            document.write("<th>Tanque</th>");
+            document.write("<th>Recorrido en Km</th>");
+            document.write("<th>Eficiencia</th>");
+        document.write("</tr>");
+    document.write("</thead>");
+    document.write("<tbody>");
+        document.write("<tr>");
+            document.write("<td>" + combustible1 + "</td>");
+            document.write("<td>" + tanque + "</td>");
+            document.write("<td>" + recorrido1 + "Km. </td>");
+            document.write("<td>" + recorrido1/tanque + "Km/L </td>");
+        document.write("</tr>");
+        document.write("<tr>");
+            document.write("<td>" + combustible2 + "</td>");
+            document.write("<td>" + tanque + "</td>");
+            document.write("<td>" + recorrido2 + "Km. </td>");
+            document.write("<td>" + recorrido2/tanque + "Km/L </td>");
+        document.write("</tr>");
+    document.write("</tbody>");
+    document.write("</table>");
+
+</script>
