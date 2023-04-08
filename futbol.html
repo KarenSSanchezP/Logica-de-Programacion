@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var victorias = parseInt(prompt("Informe la cantidad de victorias: "));
+    var empates = parseInt(prompt("Informe la cantidad de empates: "));
+
+    // texto * numero = numero (si el texto es un numero)
+    // "10" * 2 = 20
+    // "10" + 20 = 1020
+
+    //Como alternativa a parseInt(), tambien podriamos multiplicar (empates * 1), asi no
+    //alteramos su valor y se convierte automaticamente a numero, tal como pasa con victorias
+    //al multiplicarlo por 3. Aunque es recomendable usar parseInt() para asegurarnos que el
+    //numero leido como texto, sea realmente convertido a numero.
+
+    var puntosTotal = (victorias * 3) + empates;
+
+    imprimir("El total de puntos del equipo es: "+puntosTotal);
+
+    //Como ejemplo:
+    //imprimir(("10"*2));
+    //imprimir(("10"+20));
+
+    /* RECORDATORIO */
+    //parseInt() solo sirve con numeros que han sido leidos como texto, no se puede convertir
+    //un nombre a numero, por ejemplo.
+</script>
