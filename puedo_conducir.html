@@ -1,5 +1,7 @@
 <meta charset="UTF-8">
 
+<h1>PROGRAMA PARA SABER SI PUEDO CONDUCIR</h1>
+
 <script>
     function saltarLinea() {
         document.write("<br>");
@@ -13,4 +15,12 @@
     var edad = parseInt(prompt("¿Cuál es tu edad?"));
     var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
 
+    if (edad >= 18 && tieneLicencia == "S") {
+            imprimir("Puedes conducir");
+    }
+    else {
+        imprimir("No puedes conducir");
+    }
+
+    
 </script>
