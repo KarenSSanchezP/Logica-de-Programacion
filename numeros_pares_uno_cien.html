@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - CALCULAR LOS NUMEROS PARES DEL 1 AL 100</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    var numero = 1; //Inicializamos en uno, porque contamos de 1 a 100
+
+    //Primero condicionamos con un while, que los numeros se sigan
+    //imprimiendo hasta llegar a 100
+    while (numero <= 100) {
+        //Con el if condicionamos que solo se impriman aquellos que al
+        //dividirlos entre 2, su residuo sea cero, es decir los pares
+        if (numero % 2 == 0) {
+            imprimir(numero); //Imprimimos el numero
+        }
+        numero++; //Incrementamos para pasar al siguiente numero
+    }
+
+    imprimir("Fin"); //Finalizamos
+</script>
