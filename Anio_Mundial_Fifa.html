@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - AÑO MUNDIAL DE LA FIFA</h1>
+
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    var anioMundial = 1930; //año inicial, primer mundial en Uruguay
+    var limite = parseInt(prompt("Ingrese el año limite para calcular: "));
+    //con var limite, permitimos que el usuario ingrese el limite de año
+
+    while(anioMundial <= limite) {
+        imprimir("Hubo mundial de la FIFA en el año: "+anioMundial);
+        anioMundial = anioMundial + 4;
+    }
+
+    imprimir("Fin");
+</script>
