@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var intentos = 3;
+    
+    //Con el lazo for condicionamos que se pida el usuario y la contraseña, hasta 3 veces
+    for (intentos = 1; intentos <= 3; intentos++) {
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario"); 
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        //Con este primer if, validamos que el usuario reciba el mensaje de bienvenida, si es que su usuario
+        //y su contraseña ingresados coinciden con los registrados en el codigo
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break; //Rompemos el ciclo, ya no es necesario volver a pedir los datos de inicio de sesion
+        } 
+        else { //Si no coinciden 
+            //Si termina los 3 intentos, el programa despliega el siguiente mensaje y no permite seguir
+            //ingresando los datos de inicio de sesion.
+            if (intentos == 3) {
+                alert("Se acabaron los intentos permitidos.");
+            } 
+            else { //Sino, el usuario puede volver a intentarlo
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+            
+        }
+    
+    }
+
+    document.write("FIN");
+
+</script>
