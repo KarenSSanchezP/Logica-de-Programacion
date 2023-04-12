@@ -14,11 +14,13 @@
 
         //Con este primer if, validamos que el usuario reciba el mensaje de bienvenida, si es que su usuario
         //y su contraseña ingresados coinciden con los registrados en el codigo
+        
         if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
             alert("Bienvenido al sistema " + inicioDeSesionIngresado);
             break; //Rompemos el ciclo, ya no es necesario volver a pedir los datos de inicio de sesion
         } 
         else { //Si no coinciden 
+
             //Si termina los 3 intentos, el programa despliega el siguiente mensaje y no permite seguir
             //ingresando los datos de inicio de sesion.
             if (intentos == 3) {
