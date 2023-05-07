@@ -10,6 +10,10 @@
 - HTML
 - JavaScript
 
+## 👨‍🏫 Contenidos:
+- Primeros pasos
+- Conceptos Primordiales
+- Practicando con juegos y animaciones
 
 ## 👨‍🏫 Contenidos:
 
