@@ -6,13 +6,23 @@
 
 
 ## 💻 Lenguajes usados:
+
 - HTML
 - JavaScript
 
 
+## 👨‍🏫 Contenidos:
+
+- Primeros pasos
+- Conceptos Primordiales
+- Practicando con juegos y animaciones
+
+
 ## 🤔 ¿Dudas o sugerencias?
+
 <p> Cualquier duda o sugerencia es bienvenida, no dude en contactarme 😊 </p>
 
 
-## 🧐 Aclaraciones: 
+## 🧐 Aclaraciones:
+
 <p> Este repositorio ha sido creado unicamente con fines academicos y para tener un respaldo de mi progreso en el curso. </p>
