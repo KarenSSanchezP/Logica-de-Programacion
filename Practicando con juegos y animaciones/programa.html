@@ -1,0 +1,24 @@
+<!-- Creamos un canvas (pizarra) con 600 de ancho y 400 de alto -->
+<canvas width="600" height="400">
+
+</canvas>
+
+
+<script>
+    
+    var pantalla = document.querySelector("canvas"); //a pantalla le pasamos la etiqueta html, canvas
+    var pincel = pantalla.getContext("2d"); //al pincel le pasamos el contenido de la pantalla en 2d
+
+    pincel.fillStyle = "lightgrey";//propiedad (caracteristica), da un color gris claro
+    //Coordenadas:  x  y   x    y
+    pincel.fillRect(0, 0, 600, 400); //funcion, indica el origen y desplazamiento en x e y
+
+    pincel.fillStyle = "green";//propiedad (caracteristica), da un color verde
+    //Coordenadas:  x  y   x    y
+    pincel.fillRect(0, 0, 200, 400); //funcion, indica el origen y desplazamiento en x e y
+   
+    pincel.fillStyle = "red";//propiedad (caracteristica), da un color rojo
+    //Coordenadas:  x  y   x    y
+    pincel.fillRect(400, 0, 200, 400); //funcion, indica el origen y desplazamiento en x e y
+
+</script>
