@@ -2,7 +2,7 @@
 
 ## 📝 Descripcion: 
 
-<p> Este repositorio contiene los archivos de practica y los ejercicios realizados en el curso de Logica de Programacion, dicho curso es brindado gracias al Programa ONE de Oracle y Alura Latam. </p>
+<p> Este repositorio contiene los archivos de practica y los ejercicios realizados en los cursos de Logica de Programacion, dichos cursos son brindados gracias al Programa ONE de Oracle y Alura Latam. </p>
 
 
 ## 💻 Lenguajes usados:
