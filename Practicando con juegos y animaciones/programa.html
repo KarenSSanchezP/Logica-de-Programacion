@@ -3,22 +3,43 @@
 
 </canvas>
 
-
 <script>
     
     var pantalla = document.querySelector("canvas"); //a pantalla le pasamos la etiqueta html, canvas
     var pincel = pantalla.getContext("2d"); //al pincel le pasamos el contenido de la pantalla en 2d
 
     pincel.fillStyle = "lightgrey";//propiedad (caracteristica), da un color gris claro
+    
+    /* Dibujamos una bandera de 3 colores */
     //Coordenadas:  x  y   x    y
     pincel.fillRect(0, 0, 600, 400); //funcion, indica el origen y desplazamiento en x e y
 
     pincel.fillStyle = "green";//propiedad (caracteristica), da un color verde
     //Coordenadas:  x  y   x    y
     pincel.fillRect(0, 0, 200, 400); //funcion, indica el origen y desplazamiento en x e y
-   
+
     pincel.fillStyle = "red";//propiedad (caracteristica), da un color rojo
     //Coordenadas:  x  y   x    y
     pincel.fillRect(400, 0, 200, 400); //funcion, indica el origen y desplazamiento en x e y
+
+    /* Dibujamos un rectangulo abajo, en el centro de la bandera */
+    pincel.fillStyle = "yellow";
+    pincel.beginPath(); //iniciamos un camino
+    pincel.moveTo(300, 200); //movemos el pincel al centro de la bandera
+    pincel.lineTo(200, 400); //dibujamos una linea desde este punto hacia el centro
+    pincel.lineTo(400, 400); //dibujamos una linea desde este punto hacia el centro
+    pincel.fill(); //Rellenamos con el ultimo color definido (amarillo)
+    
+    /* Dibujamos un circulo en el centro de la bandera */
+    pincel.fillStyle = "blue";
+    pincel.beginPath(); //iniciamos un camino
+    //graficar circunferencia, parametros: coordenadas (x, y) del centro, radio, angulo inicial y angulo final
+    pincel.arc(300, 200, 50, 0, (2*3.14));
+    pincel.moveTo(300, 200); //movemos el pincel al centro de la bandera
+    pincel.fill(); //Rellenamos con el ultimo color definido (azul)
+
+
+    
+    /* NOTA: podemos encontrar documentacion en internet buscando "2d canvas" en nuestro navegador */
 
 </script>
