@@ -1,0 +1,28 @@
+<!-- Creamos un canvas (pizarra) con 600 de ancho y 400 de alto -->
+<canvas width="600" height="400">
+
+</canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+    
+    /* Triangulo 1: externo, de color negro*/
+    pincel.beginPath(); //iniciamos un camino
+    pincel.moveTo(50, 50); //comenzamos en (50, 50)
+    pincel.lineTo(50, 400); //bajamos en y a (50, 400)
+    pincel.lineTo(400, 400); //nos movemos a la derecha hasta (400, 400)
+    pincel.fill(); //rellenamos el triangulo con color negro
+    
+    /* Triangulo 2: interno, de color blanco*/
+    pincel.fillStyle = "white"; 
+    pincel.beginPath(); //iniciamos un camino
+    pincel.moveTo(100, 175);  //comenzamos en (100, 175)
+    pincel.lineTo(100, 350); //bajamos en y a (100, 350)
+    pincel.lineTo(275, 350); //nos movemos a la derecha hasta (275, 350)
+    pincel.fill(); //rellenamos el triangulo con color blanco
+    
+    /* ¡Listo! Tenemos una escuadra */
+
+</script>
